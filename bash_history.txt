@@ -1,0 +1,67 @@
+    1  explorer .
+    2  pwd
+    3  python --version
+    4  conda --version
+    5  
+    6  code "/c/Program Files/Git/etc/profile.d/git-prompt.sh"
+    7  conda install jupyterlab jupyterlab-git jupyterlab-spellchecker
+    8  jupyter lab
+    9  code ~/.bash_profile
+   10  R --version
+   11  R --version
+   12  latex --version
+   13  
+   14  code ~/.bash_profile
+   15  make --version
+   16  docker run hello-world
+   17  docker run hello-world
+   18  bash <(curl -Ss https://raw.githubusercontent.com/UBC-DSCI/dsci-310-student/main/src/check_setup.sh)
+   19  bash <(curl -Ss https://raw.githubusercontent.com/UBC-DSCI/dsci-310-student/main/src/check_setup.sh)
+   20  ls
+   21  cd
+   22  pwd
+   23  bash <(curl -Ss https://raw.githubusercontent.com/UBC-DSCI/dsci-310-student/main/src/check_setup.sh)
+   24  cd Documents/GitHub
+   25  git clone https://github.com/hlan22/2025-02-11-scripts_docs.git
+   26  cd 2025-02-11-scripts_docs
+   27  code bash.sh
+   28  bash bash.sh
+   29  mkdir scripts
+   30  bash scripts/bash.sh
+   31  #the script is running in the current working directory even though the script is in a sub directory
+   32  cd scripts/
+   33  bash bash.sh
+   34  cd ..
+   35  code script.R
+   36  cat script.R
+   37  Rscript script.R
+   38  #now moved file into scripts folder
+   39  Rscript scripts/script.R
+   40  Rscripts -e "1+1"
+   41  Rscript -e "1+1"
+   42  #the -e makes it so that it will run the following thing as r code directly
+   43  1+1
+   44  #now, how do we run those scripts on github actions so the process is automated
+   45  #personal access token also has to select for repo AND workflow since you will need that for automation
+   46  mkdir -p .github/workflows
+   47  ls -a
+   48  git status
+   49  #the -p is for parent, allows you to make further directories without having to step into the folder first 
+   50  cd .github.workflows
+   51  cd .github/workflows
+   52  code bash.yml
+   53  git add
+   54  cd ..
+   55  cd ..
+   56  git status
+   57  git add .
+   58  git commit -m "learning automation for bash"
+   59  git status
+   60  git add .
+   61  git commit -m "edited bash.yml file to be applicable to this scenario"
+   62  git push origin main
+   63  git status
+   64  git add .
+   65  git commit -m "manually run bash commands as an action"
+   66  git push origin main
+   67  history > bash_history.txt
