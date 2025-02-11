@@ -17,3 +17,11 @@ jobs: # specify the jobs you want to create
     steps: # actual steps to run
       - name: Check out the repo # run git clone and cd into it
         uses: actions/checkout@v4 # probably automating off something in your repository, so usually your first step
+      - name: Run a command manually
+        run: ls -a
+      - name: Run multiple commands manually # use a vertical bar |
+        run: | 
+          pwd
+          ls -a
+      - name: Run multiple commands manually with script
+        run: bash scripts/bash.sh
