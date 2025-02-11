@@ -1,0 +1,17 @@
+name: Publish Docker image # this is what specifies the automation
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Dockerfile'
+      - .github/workflows/docker-publish.yml # or whatever you named the file
+      - 'conda-linux-64.lock'
+
+jobs:
+  push_to_registry:
+    name: Push Docker image to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
